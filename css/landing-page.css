@@ -550,22 +550,7 @@ html {
 }
 
 .company .col-left .content img {
-  position: relative;
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  -webkit-box-shadow: 0 15px 38px 0 rgba(8, 8, 8, 0.2);
-          box-shadow: 0 15px 38px 0 rgba(8, 8, 8, 0.2);
   z-index: 2;
-}
-
-.company .col-left .content .shape-img {
-  border-radius: 25% 70% 84% 22% / 42% 75% 25% 75%;
-  width: 500px;
-  height: 500px;
-  background: #009f4d;
-  opacity: .6;
-  position: absolute;
-  top: 0;
-  z-index: 1;
 }
 
 .company .col-left .content .box {
@@ -576,7 +561,7 @@ html {
           transform: rotate(45deg);
   position: absolute;
   top: 59%;
-  left: 22%;
+  left: 28%;
   z-index: 2;
   border-radius: 15px;
 }
@@ -2464,8 +2449,45 @@ html {
   .company .container .col-left .content img {
     width: 100%;
   }
+  .company .container .col-left .content .box {
+    width: 150px;
+    height: 150px;
+    background-color: #009f4d;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    position: absolute;
+    top: 29%;
+    left: 58%;
+    z-index: 2;
+    border-radius: 15px;
+  }
+  .company .container .col-left .content .box .box-info {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    width: 151px;
+    height: 127px;
+    text-align: center;
+    margin: 14px 0 1px 7px;
+  }
+  .company .container .col-left .content .box .box-info .title-info-box {
+    font-size: 28px;
+    line-height: 40px;
+    color: #fff;
+    font-weight: 600;
+    margin: 0;
+    padding: 0 0 7px 0;
+  }
+  .company .container .col-left .content .box .box-info p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 23px;
+    opacity: 0.7;
+  }
   .company .container .col-right .fa-solid {
     top: 88.7%;
+  }
+  .company .container .col-right h2 {
+    font-size: 22px;
   }
   .advantage {
     padding: 10px 0;
@@ -2567,11 +2589,23 @@ html {
   .about-us .container .col-right {
     padding: 20px 2% 0 2%;
   }
+  .meetteam {
+    padding: 4% 6%;
+  }
+  .contact {
+    padding: 5% 7% 2% 7%;
+  }
+  .let-project .container .form-project .form-input {
+    width: 90%;
+  }
+  .let-project .container .form-project .Message {
+    width: 90%;
+  }
   .company {
-    margin-top: 280px;
+    padding: 2%;
   }
   .company .container .col-left {
-    padding: 2%;
+    padding: 2% 2% 10% 2%;
   }
   .company .container .col-left .content img {
     width: 100%;
@@ -2584,11 +2618,11 @@ html {
   .company .container .col-left .content .box {
     width: 150px;
     height: 150px;
-    top: 49%;
+    top: 46%;
     left: 43%;
   }
   .company .container .col-left .content .box .box-info {
-    margin: 13px 0 1px 2px;
+    margin: 23px 0 1px 14px;
   }
   .company .container .col-left .content .box .box-info .title-info-box {
     font-size: 35px;
@@ -2596,8 +2630,14 @@ html {
   .company .container .col-left .content .box .box-info p {
     font-size: 20px;
   }
+  .company .container .col-right {
+    padding: 2%;
+  }
   .company .container .col-right .fa-solid {
-    top: 88.7%;
+    top: 89.7%;
+  }
+  .advantage .container .row {
+    padding: 20px 2%;
   }
   .challenges .container .col-left {
     padding: 0 2%;
@@ -2628,6 +2668,7 @@ html {
   }
   .development .container .col-left {
     line-height: 22px;
+    padding: 0 6%;
   }
   .development .container .col-left span {
     font-size: 13px;
@@ -2645,6 +2686,9 @@ html {
   .development .container .col-left .detail .items h4 {
     font-size: 17px;
     margin: 10px 0 15px 0;
+  }
+  .development .container .col-right {
+    padding: 0 6%;
   }
   .solution .item .detail h2 {
     font-size: 27px;

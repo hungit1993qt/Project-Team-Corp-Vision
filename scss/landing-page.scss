@@ -473,21 +473,21 @@ html {
       .content{
         
         img{
-          position: relative;
-          border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-          box-shadow: 0 15px 38px 0 rgba(8, 8, 8, 0.2);
+          // position: relative;
+          // border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+          // box-shadow: 0 15px 38px 0 rgba(8, 8, 8, 0.2);
           z-index: 2;
         }
-        .shape-img{
-          border-radius: 25% 70% 84% 22% / 42% 75% 25% 75%;
-          width: 500px;
-          height: 500px;
-          background: $green-light;
-          opacity: .6;
-          position: absolute;
-          top: 0;
-          z-index: 1;
-        }
+        // .shape-img{
+        //   border-radius: 25% 70% 84% 22% / 42% 75% 25% 75%;
+        //   width: 500px;
+        //   height: 500px;
+        //   background: $green-light;
+        //   opacity: .6;
+        //   position: absolute;
+        //   top: 0;
+        //   z-index: 1;
+        // }
         .box{
           width: 200px;
           height: 200px;
@@ -495,7 +495,7 @@ html {
           transform: rotate(45deg);
           position: absolute;
           top: 59%;
-          left: 22%;
+          left: 28%;
           z-index: 2;
           border-radius: 15px;
           .box-info{           
@@ -2277,12 +2277,48 @@ html {
           }
           img{
             width: 100%;  
+          }
+          .box{
+            width: 150px;
+            height: 150px;
+            background-color: $green-light;
+            transform: rotate(45deg);
+            position: absolute;
+            top: 29%;
+            left: 58%;
+            z-index: 2;
+            border-radius: 15px;
+            .box-info{           
+              
+              transform: rotate(-45deg);
+              width: 151px;
+              height: 127px;
+              text-align: center;
+              margin: 14px 0 1px 7px;
+              .title-info-box{
+                font-size: 28px;
+                line-height: 40px;
+                color: $while-0;
+                font-weight: 600;
+                margin: 0;
+                padding: 0 0 7px 0;
+              }
+              p{
+                color: $while-0;
+                font-size: 18px;
+                line-height: 23px;
+                opacity:0.7;
+              }
+            }
           }          
         }
       }
       .col-right{
         .fa-solid{
           top:88.7%
+        }
+        h2{
+          font-size: 22px;
         }
       }
     }
@@ -2423,11 +2459,23 @@ html {
     margin-top: 30%;
   }
 
+  .meetteam{
+    padding: 4% 6%;
+  }
+  .contact{
+    padding: 5% 7% 2% 7%;
+  }
+  .let-project .container .form-project .form-input{
+    width: 90%;
+  }
+  .let-project .container .form-project .Message{
+    width: 90%;
+  }
   .company{
-    margin-top: 280px;
+    padding: 2%;
     .container{      
       .col-left{
-        padding: 2%;
+        padding:2% 2% 10% 2%;
         .content{
           img{
             width: 100%;
@@ -2440,10 +2488,10 @@ html {
           .box{
             width: 150px;
             height: 150px;
-            top: 49%;
+            top: 46%;
             left: 43%;
             .box-info{
-              margin: 13px 0 1px 2px;
+              margin: 23px 0 1px 14px;
               .title-info-box{
                 font-size: 35px;
               }
@@ -2455,13 +2503,21 @@ html {
         }
       }
       .col-right{
+        padding: 2%;
         .fa-solid{
-          top:88.7%
+          top:89.7%
         }
       }
     }
   }
-
+  .advantage{
+    .container{
+      .row{
+        padding: 20px 2%;
+      }
+    }
+  }
+  
   .challenges{
     .container{
       .col-left{
@@ -2496,6 +2552,7 @@ html {
     .container{
       .col-left{
         line-height: 22px;
+        padding: 0 6%;
         span{
           font-size: 13px;
           margin-bottom: 7px;
@@ -2517,6 +2574,9 @@ html {
             }
           }
         }
+      }
+      .col-right{
+        padding: 0 6%;
       }
     }
   }

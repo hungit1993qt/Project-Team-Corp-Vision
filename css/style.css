@@ -365,6 +365,7 @@ html {
   font-size: 35px;
   line-height: 2.5rem;
   font-weight: 700;
+  color: #3f3a64;
 }
 
 .about-us .container .col-left span {
@@ -470,6 +471,7 @@ html {
   font-size: 35px;
   line-height: 2.5rem;
   font-weight: 700;
+  color: #3f3a64;
 }
 
 .challenges .container span {
@@ -1183,14 +1185,14 @@ html {
   background-color: rgba(0, 0, 0, 0.25);
   border-color: rgba(255, 255, 255, 0.15);
   padding: 25px 15px;
-  border: 1px solid #eeeeee52;
+  border: 1px solid #eee;
 }
 
 .together .container .main form input {
   background-color: rgba(0, 0, 0, 0.25);
   border-color: rgba(255, 255, 255, 0.15);
   width: 100%;
-  border: 1px solid #eeeeee52;
+  border: 1px solid #eee;
   border-left: none;
   padding-left: 20px;
   font-size: 18px;

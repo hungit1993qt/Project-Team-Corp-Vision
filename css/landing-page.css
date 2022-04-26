@@ -2052,6 +2052,20 @@ html {
   color: #fff;
 }
 
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+  border: none;
+  background-color: #009f4d;
+  color: white;
+  cursor: pointer;
+  padding: 12px 15px;
+  border-radius: 50%;
+}
+
 @media screen and (max-width: 992px) {
   .navbar {
     padding: 0 30px;

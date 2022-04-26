@@ -632,24 +632,14 @@
      </div>
     
   </footer>
+  <button id="back-to-top"><i class="fa-solid fa-angle-up"></i></button>
   <section class="copyright-team-project">
     <div class="container">
       <p>© 2022 Corp Vision All Rights Reserved | WordPress Theme by <a href="">W3Layouts.</a></p>
     </div>
     
   </section>
-  <script>
-    const changeBackgroundNav = document.querySelector('.navbar');
-
-    changeBackgroundNav.onclick = () => window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        })
-     window.onscroll = () => {    
-      window.pageYOffset > 50 ? changeBackgroundNav.classList.add('changNavbar') : changeBackgroundNav.classList.remove('changNavbar');
-      
-        }
-  </script>
+  
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -671,7 +661,7 @@
 })
   </script>
   <script language="javascript" src="js/nav-right.js"></script>
- 
+  <script language="javascript" src="js/back-to-top.js"></script>
   
   
 

@@ -1412,13 +1412,15 @@ html {
         justify-content: space-around;
   }
   .navbar .container .navbar-link {
-    display: none;
+    display: block;
   }
   .navbar .container .navbar-search {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .navbar .container .nav-sm {
-    display: block;
+    display: none;
     background-color: #009f4d;
     padding: 10px;
     color: #fff;
@@ -1595,6 +1597,38 @@ html {
 
 .changNavbar .container .navbar-search .moonsty {
   color: #3f3a64;
+}
+
+@media screen and (max-width: 860px) {
+  .navbar .container .navbar-link {
+    display: block;
+  }
+  .navbar .container .navbar-link ul li a {
+    padding: 6px 0;
+  }
+  .navbar .container .navbar-search {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 705px) {
+  .navbar .container .navbar-link {
+    display: none;
+  }
+  .navbar .container .navbar-link ul li a {
+    padding: 6px 0;
+  }
+  .navbar .container .nav-sm {
+    display: block;
+    background-color: #009f4d;
+    padding: 10px;
+    color: #fff;
+    border-radius: 10%;
+    font-size: 1.2rem;
+  }
+  .navbar .container .navbar-search {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {

@@ -471,11 +471,12 @@ html {
     .col-left{
       width: 50%;
       .content{
+        
         img{
           position: relative;
           border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
           box-shadow: 0 15px 38px 0 rgba(8, 8, 8, 0.2);
-        z-index: 2;
+          z-index: 2;
         }
         .shape-img{
           border-radius: 25% 70% 84% 22% / 42% 75% 25% 75%;
@@ -1063,78 +1064,7 @@ html {
   }
 }
 
-.service{
-  width: 100%;
-  padding: 30px 0;
-  .container{
-    .title{
-      text-align: center;
-      padding: 30px 0;
-      h2{
-        font-size: 30px;
-        line-height: 45px;
-        font-weight: 700;
-        color: $h2-color;
-      }
-    }
-    .main{
-      .col-4{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        gap: 30px;
-        .items{
-          text-align: center;
-          display: flex;
-          flex-direction: column;
-          line-height: 30px;
-          &:hover > #resultat{
-            color: $green-light;
-          }
-          a{
-            text-decoration: none;
-            font-weight: 600;
-            color:$h2-color;
-            transition: all 0.4s;
-            &:hover{
-              color: $green-light;
-            }
-          }
-          .resultat:hover > #resultat{
-            color: $green-light;
-          }
-          span{
-            line-height: 27px;
-            font-size: 17px;
-            color: $grey-light;
-            margin-bottom: 30px;
-          }
-          .btn-center{
-            font-size: 17px;
-            line-height: 28px;
-            font-weight: 600;
-            color:$h2-color;
-            background:$while-0;
-            display: inline-block;
-            transform: translate(22%,-51%);
-           
-            border: 1px solid transparent;
-            border-radius: 15px;
-            padding: 12px 35px;
-            width: 70%;
-            box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
-          }
-          img{
-            width: 100%;
-            border-radius: 15px 15px 0 0;
-            transition: all 0.4s;
-            
-            }
-          }
-        }
-      }
-    }
-  }
+
 
 .project{
   padding:50px 0;
@@ -1848,13 +1778,13 @@ html {
   .navbar{
     .container{
       .navbar-link{
-        display: none;
+        display: block;
       }
       .navbar-search{
-        display: none;
+        display: flex;
       }
       .nav-sm{
-        display: block;
+        display: none;
         background-color: $green-light;
         padding: 10px;
         color: $while-0;
@@ -1911,24 +1841,7 @@ html {
     }
     
   }
-  .service{
-    .container{
-      .main{
-        .col-4{
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: center;
-          gap: 0px;
-          padding:0 10%;
-          .items{
-            padding: 20px;
-            width: 50%;
-           
-          }
-        }
-      }
-    }
-  }
+  
 
   .company{
     border-top: 1px solid $grey-light;
@@ -1938,7 +1851,7 @@ html {
     
     .col-left{
       width: 100%;
-      padding:0 14%;
+      padding:0 7%;
       margin-top: 9%;
       .content{
         .box{
@@ -2162,6 +2075,54 @@ html {
 
 }
 
+@media screen and (max-width: 860px){
+  .navbar{
+    .container{
+      .navbar-link{
+        display: block;
+        ul{
+          li{
+            a{
+              padding:6px 0 ;
+            }
+          }
+        }
+      }
+      .navbar-search{
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 717px){
+  .navbar{
+    .container{
+      .navbar-link{
+        display: none;
+        ul{
+          li{
+            a{
+              padding:6px 0 ;
+            }
+          }
+        }
+        
+      }
+      .nav-sm{
+        display: block;
+        background-color: $green-light;
+        padding: 10px;
+        color: $while-0;
+        border-radius: 10%;
+        font-size: 1.2rem;
+      }
+      .navbar-search{
+        display: none;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
@@ -2300,39 +2261,23 @@ html {
     }
   }
 
-  .service{
-    .container{
-      .title{
-        h2{
-          width: 65%;
-          display: block;
-          font-size: 40px;
-          margin: auto;
-        }
-      }
-      .main{
-        .col-4{
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: center;
-          gap: 0px;
-          padding:0 10%;
-          .items{
-            padding: 20px;
-            width: 100%;
-           
-          }
-        }
-      }
-    }
-  }
+  
   .company{
-    margin-top: 150px;
+    margin-top: 40%;
+    padding: 0;
     .container{
       .col-left{
         padding: 2%;
         .content{
-          
+          width: 80%;
+          .shape-img{
+            width: 73%;
+            height: 410px;
+            top: 4%;            
+          }
+          img{
+            width: 100%;  
+          }          
         }
       }
       .col-right{
@@ -2395,6 +2340,47 @@ html {
     }
   }
 }
+@media screen and (max-width: 500px){
+  .company{
+    margin-top: 280px;
+    .container{      
+      .col-left{
+        padding: 2%;
+        .content{
+          position: relative;
+          margin: 0 auto;
+          img{
+            width: 100%;
+          }
+          .shape-img{
+            width: 100%;
+            max-height: 310px;
+            top: 4%;
+          }
+          .box{
+            width: 150px;
+            height: 150px;
+            top: 53%;
+            left: 50%;
+            .box-info{
+              margin: 23px 0 1px 13px;
+              .title-info-box{
+                font-size: 25px;
+                padding: 0 0 3px 0;
+              }
+              p{
+                font-size: 15px;
+                line-height: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  
+}
 @media screen and (max-width: 400px){
   .carousel{
     #slider{
@@ -2438,7 +2424,7 @@ html {
   }
 
   .company{
-    margin-top: 200px;
+    margin-top: 280px;
     .container{      
       .col-left{
         padding: 2%;
@@ -2447,15 +2433,15 @@ html {
             width: 100%;
           }
           .shape-img{
-            width: 355px;
-            height: 355px;
+            width: 100%;
+            height: 280px;
             top: 4%;
           }
           .box{
             width: 150px;
             height: 150px;
-            top: 24%;
-            left: 35%;
+            top: 49%;
+            left: 43%;
             .box-info{
               margin: 13px 0 1px 2px;
               .title-info-box{
@@ -2470,7 +2456,7 @@ html {
       }
       .col-right{
         .fa-solid{
-          top:89.7%
+          top:88.7%
         }
       }
     }
@@ -2551,27 +2537,7 @@ html {
     }
   }
 
-  .service{
-    .container{
-      .title{
-        h2{
-          font-size: 22px;
-        }
-      }
-      .main{
-        .col-4{
-          padding: 0 1%;
-          .items{
-            a#resultat{
-              font-size: 16px;
-              width: 80%;
-              transform: translate(14%, -51%);
-            }
-          }
-        }
-      }
-    }
-  }
+  
   .project{
     padding: 30px 0 0px 0;
     .container{

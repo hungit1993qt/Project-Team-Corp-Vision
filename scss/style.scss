@@ -1184,13 +1184,13 @@ html {
   .navbar{
     .container{
       .navbar-link{
-        display: none;
+        display: block;
       }
       .navbar-search{
-        display: none;
+        display: flex;
       }
       .nav-sm{
-        display: block;
+        display: none;
         background-color: $green-light;
         padding: 10px;
         color: $while-0;
@@ -1391,6 +1391,53 @@ html {
   }
   
 
+}
+@media screen and (max-width: 860px){
+  .navbar{
+    .container{
+      .navbar-link{
+        display: block;
+        ul{
+          li{
+            a{
+              padding:6px 0 ;
+            }
+          }
+        }
+      }
+      .navbar-search{
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 705px){
+  .navbar{
+    .container{
+      .navbar-link{
+        display: none;
+        ul{
+          li{
+            a{
+              padding:6px 0 ;
+            }
+          }
+        }
+        
+      }
+      .nav-sm{
+        display: block;
+        background-color: $green-light;
+        padding: 10px;
+        color: $while-0;
+        border-radius: 10%;
+        font-size: 1.2rem;
+      }
+      .navbar-search{
+        display: none;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {

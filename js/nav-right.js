@@ -13,5 +13,5 @@ function navrightShow(){
   navright.style.opacity='1'
   navright.style.display='block'
   navrightS.style.display='none'
-  navrights.style.opacity='0'
+  navrightS.style.opacity='0'
 }

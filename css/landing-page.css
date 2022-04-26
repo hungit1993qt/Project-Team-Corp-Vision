@@ -485,10 +485,13 @@ html {
   line-height: 2.5rem;
 }
 
-.company .container .col-right .fa-solid {
-  position: absolute;
-  top: 65%;
-  left: 75%;
+.company .container .col-right .btn-bot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.company .container .col-right .btn-bot .fa-solid {
   color: #009f4d;
   font-size: 79px;
   cursor: pointer;
@@ -496,17 +499,17 @@ html {
   transition: all 0.4s;
 }
 
-.company .container .col-right .fa-solid:hover {
+.company .container .col-right .btn-bot .fa-solid:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.company .container .col-right a {
-  margin-top: 30px;
+.company .container .col-right .btn-bot a {
+  margin-right: 15px;
   width: 45%;
   text-align: center;
   display: inline-block;
-  line-height: 3rem;
+  line-height: 4rem;
   text-decoration: none;
   font-weight: 600;
   color: #fff;
@@ -518,7 +521,7 @@ html {
   transition: all 0.4s;
 }
 
-.company .container .col-right a:hover {
+.company .container .col-right .btn-bot a:hover {
   background-color: #076b38;
 }
 
@@ -2153,10 +2156,6 @@ html {
     width: 100%;
     padding: 10%;
   }
-  .company .container .col-right .fa-solid {
-    top: 85.5%;
-    left: 51%;
-  }
   .advantage .container .row {
     gap: 0;
     padding: 20px 10%;
@@ -2344,9 +2343,29 @@ html {
 @media screen and (max-width: 717px) {
   .navbar .container .navbar-link {
     display: none;
+    position: absolute;
+    left: 44%;
+  }
+  .navbar .container .navbar-link ul li {
+    float: none;
+  }
+  .navbar .container .navbar-link ul li .dropmenu .submenu {
+    top: -33px;
+    left: 85px;
+  }
+  .navbar .container .navbar-link ul li .dropmenu .submenu::before {
+    top: 33px;
+    left: -1%;
   }
   .navbar .container .navbar-link ul li a {
     padding: 6px 0;
+  }
+  .navbar .container .navbar-link ul li .fa-solid {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  .navbar .container .navbarHide {
+    display: block;
   }
   .navbar .container .nav-sm {
     display: block;
@@ -2497,9 +2516,6 @@ html {
     line-height: 23px;
     opacity: 0.7;
   }
-  .company .container .col-right .fa-solid {
-    top: 88.7%;
-  }
   .company .container .col-right h2 {
     font-size: 22px;
   }
@@ -2646,9 +2662,6 @@ html {
   }
   .company .container .col-right {
     padding: 2%;
-  }
-  .company .container .col-right .fa-solid {
-    top: 89.7%;
   }
   .advantage .container .row {
     padding: 20px 2%;

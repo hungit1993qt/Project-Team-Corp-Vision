@@ -156,6 +156,9 @@ html {
           
         }
       }
+      .navbarHide{
+        display: block;
+      }
       .nav-sm{
         display: none;
       }
@@ -746,14 +749,34 @@ html {
     .container{
       .navbar-link{
         display: none;
+        position: absolute;
+        left: 44%;
         ul{
           li{
+            float: none;
+            .dropmenu{
+              .submenu{
+                top:-33px;
+                left: 85px;
+                &::before{
+                  top: 33px;
+                  left: -1%;
+                }
+              }
+            }
             a{
               padding:6px 0 ;
             }
+            .fa-solid{
+              transform: rotate(270deg);
+            }
+            
           }
         }
         
+      }
+      .navbarHide{
+        display: block;
       }
       .nav-sm{
         display: block;

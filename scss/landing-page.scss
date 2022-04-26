@@ -156,6 +156,7 @@ html {
           
         }
       }
+      
       .nav-sm{
         display: none;
       }
@@ -413,38 +414,39 @@ html {
       flex-direction: column;
       padding: 3%;
       line-height: 2.5rem;
-      .fa-solid{
-        position: absolute;
-        top: 65%;
-        left: 75%;
-        color: $green-light;
-        font-size: 79px;
-        cursor: pointer;
-        transition: all 0.4s;
-        &:hover{
-          transform: scale(1.1);
+      .btn-bot{
+        display: flex;
+        .fa-solid{       
+          color: $green-light;
+          font-size: 79px;
+          cursor: pointer;
+          transition: all 0.4s;
+          &:hover{
+            transform: scale(1.1);
+          }
+        }
+        a{
+          margin-right: 15px;
+          width: 45%;
+          text-align: center;
+          display: inline-block;
+          line-height: 4rem;
+          text-decoration: none;
+          font-weight: 600;
+          color: $while-0;
+          font-size: 1.1rem;
+          background-color: $green-light;;
+          border-radius: 10px;
+          padding: 6px;
+          transition: all 0.4s;
+          
+          &:hover{
+            background-color:$bg-green-dark;
+          }
+          
         }
       }
-      a{
-        margin-top: 30px;
-        width: 45%;
-        text-align: center;
-        display: inline-block;
-        line-height: 3rem;
-        text-decoration: none;
-        font-weight: 600;
-        color: $while-0;
-        font-size: 1.1rem;
-        background-color: $green-light;;
-        border-radius: 10px;
-        padding: 6px;
-        transition: all 0.4s;
-        
-        &:hover{
-          background-color:$bg-green-dark;
-        }
-        
-      }
+      
       p{
         margin: 1.5rem 0;
         line-height: 27px;
@@ -1881,8 +1883,7 @@ html {
       width: 100%;
       padding:10%;
       .fa-solid{
-        top: 85.5%;
-        left: 51%;
+        
       }
     }
     }
@@ -2112,14 +2113,34 @@ html {
     .container{
       .navbar-link{
         display: none;
+        position: absolute;
+        left: 44%;
         ul{
           li{
+            float: none;
+            .dropmenu{
+              .submenu{
+                top:-33px;
+                left: 85px;
+                &::before{
+                  top: 33px;
+                  left: -1%;
+                }
+              }
+            }
             a{
               padding:6px 0 ;
             }
+            .fa-solid{
+              transform: rotate(270deg);
+            }
+            
           }
         }
         
+      }
+      .navbarHide{
+        display: block;
       }
       .nav-sm{
         display: block;
@@ -2328,7 +2349,7 @@ html {
       }
       .col-right{
         .fa-solid{
-          top:88.7%
+          
         }
         h2{
           font-size: 22px;
@@ -2518,7 +2539,7 @@ html {
       .col-right{
         padding: 2%;
         .fa-solid{
-          top:89.7%
+          
         }
       }
     }

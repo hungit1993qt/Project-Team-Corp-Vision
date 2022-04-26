@@ -182,6 +182,10 @@ html {
   line-height: 2.6rem;
 }
 
+.navbar .container .navbarHide {
+  display: block;
+}
+
 .navbar .container .nav-sm {
   display: none;
 }
@@ -815,9 +819,29 @@ html {
 @media screen and (max-width: 717px) {
   .navbar .container .navbar-link {
     display: none;
+    position: absolute;
+    left: 44%;
+  }
+  .navbar .container .navbar-link ul li {
+    float: none;
+  }
+  .navbar .container .navbar-link ul li .dropmenu .submenu {
+    top: -33px;
+    left: 85px;
+  }
+  .navbar .container .navbar-link ul li .dropmenu .submenu::before {
+    top: 33px;
+    left: -1%;
   }
   .navbar .container .navbar-link ul li a {
     padding: 6px 0;
+  }
+  .navbar .container .navbar-link ul li .fa-solid {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  .navbar .container .navbarHide {
+    display: block;
   }
   .navbar .container .nav-sm {
     display: block;

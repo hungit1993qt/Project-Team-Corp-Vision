@@ -78,9 +78,12 @@
         </div>      
       </div>
      
-    <div class="navbar-right">
-      <ul>
-        <li><a href="javascript: history.go(+1)"><i class="fa-solid fa-angles-right"></i></a></li>
+      <div id="icon-navright">
+        <a onclick="navrightShow()"><i class="fa-solid fa-angles-left"></i></a>
+      </div>
+      <div id="hide-navright" class="navbar-right">
+        <ul>
+        <li><a onclick="navrightHide()"><i class="fa-solid fa-angles-right"></i></a></li>
         <li><a href="javascript: history.go(-1)" href=""><i class="fa-solid fa-arrow-left"></i>Back</a></li>
         <li><a href=""><i class="fa-solid fa-download"></i>Download</a></li>
         <li><a href=""><i class="fa-solid fa-cart-shopping"></i>Buy</a></li>
@@ -90,7 +93,7 @@
 
   <section class="articles">
     <div class="container">       
-       <main class="main">
+       <main id="height-2" class="main">
          <div id="page-1" class="col-4 ">
            <div class="items">
             <div  class="img-item">
@@ -234,15 +237,16 @@
             </div>                  
           </div>
         </div>
-        <div class="pagination">
-          <div class="content">
-            <button id="btnPrev" onclick="showPage1()">Prev</button>
-            <button id="p1" onclick="showPage1()" class="active">1</button>
-            <button id="p2" onclick="showPage2()">2</button>         
-            <button id="btnNext" onclick="showPage2()" >Next</button>
-          </div>          
-        </div>
+        
        </main>
+       <div class="pagination">
+        <div class="content">
+          <button id="btnPrev" onclick="showPage1()">Prev</button>
+          <button id="p1" onclick="showPage1()" class="active">1</button>
+          <button id="p2" onclick="showPage2()">2</button>         
+          <button id="btnNext" onclick="showPage2()" >Next</button>
+        </div>          
+      </div>
     </div>
   </section>
   
@@ -368,6 +372,7 @@
     var activeBtnP2 =document.getElementById("p2");
     var btnPrevs = document.getElementById("btnPrev");
     var btnNexts = document.getElementById("btnNext");
+    var heightMainAr = document.getElementById('height-2');
     function showPage2(){
       page1.style.display="none";
       page2.style.display="none";
@@ -378,7 +383,7 @@
       activeBtnP2.style.color="#fff"
       btnPrevs.style.display="block"
       btnNexts.style.display="none"
-      console.log(col)  
+      heightMainAr.style.height = '886px'
   }
   function showPage1(){
       page1.style.display="flex";
@@ -390,13 +395,14 @@
       activeBtnP1.style.color="#fff"
       btnPrevs.style.display="none"
       btnNexts.style.display="block"
+      heightMainAr.style.height = 'auto'
   }
   function comBack(){
     history.back();
   } 
-   
-  </script>
   
+  </script>
+  <script language="javascript" src="js/nav-right.js"></script>
  
   
   

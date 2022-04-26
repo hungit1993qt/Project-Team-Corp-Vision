@@ -271,12 +271,57 @@ html {
   z-index: -1;
 }
 
+.carousel #icon-navright {
+  position: fixed;
+  top: 36%;
+  right: 2px;
+  bottom: 0;
+  z-index: 17;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  display: block;
+  opacity: 1;
+}
+
+.carousel #icon-navright a {
+  border-radius: 37% 0 0 37%;
+  width: 18px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #0D1326;
+  cursor: pointer;
+  color: #e6ebff;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.carousel #icon-navright a i {
+  line-height: 20px;
+  display: block;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .carousel .navbar-right {
   position: fixed;
   top: 30%;
   right: 0;
   bottom: 0;
   z-index: 10;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  display: none;
+  opacity: 0;
 }
 
 .carousel .navbar-right ul {
@@ -301,6 +346,7 @@ html {
 }
 
 .carousel .navbar-right ul li a {
+  cursor: pointer;
   opacity: 0.5;
   color: #e6ebff;
   text-decoration: none;
@@ -446,6 +492,13 @@ html {
   color: #009f4d;
   font-size: 79px;
   cursor: pointer;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.company .container .col-right .fa-solid:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .company .container .col-right a {

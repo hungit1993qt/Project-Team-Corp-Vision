@@ -271,12 +271,57 @@ html {
   transition: all 0.4s;
 }
 
+.carousel #icon-navright {
+  position: fixed;
+  top: 36%;
+  right: 2px;
+  bottom: 0;
+  z-index: 17;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  display: block;
+  opacity: 1;
+}
+
+.carousel #icon-navright a {
+  border-radius: 37% 0 0 37%;
+  width: 18px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #0D1326;
+  cursor: pointer;
+  color: #e6ebff;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.carousel #icon-navright a i {
+  line-height: 20px;
+  display: block;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .carousel .navbar-right {
   position: fixed;
   top: 30%;
   right: 0;
   bottom: 0;
   z-index: 10;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  display: none;
+  opacity: 0;
 }
 
 .carousel .navbar-right ul {
@@ -301,6 +346,7 @@ html {
 }
 
 .carousel .navbar-right ul li a {
+  cursor: pointer;
   opacity: 0.5;
   color: #e6ebff;
   text-decoration: none;
@@ -313,8 +359,9 @@ html {
 }
 
 .articles {
-  width: 100%;
-  padding: 30px 10px 50px 10px;
+  width: 80%;
+  margin: auto;
+  padding: 30px 10px 20px 10px;
 }
 
 .articles .container .title {
@@ -390,7 +437,7 @@ html {
 }
 
 .articles .container .main .col-4 .items .img-item img {
-  width: 100%;
+  max-width: 100%;
   border-radius: 15px 15px 0 0;
   display: block;
   -webkit-transition: all 0.4s;
@@ -403,20 +450,20 @@ html {
 }
 
 .articles .container .main .col-4 .items .detail {
-  padding: 25px;
-  line-height: 45px;
+  padding: 10px 22px 10px 22px;
+  line-height: 27px;
   border-bottom: 1px solid #eee;
   background-color: #fff;
 }
 
 .articles .container .main .col-4 .items .detail span {
   color: #999;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 400;
 }
 
 .articles .container .main .col-4 .items .detail h2 {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 600;
   color: #3f3a64;
 }
@@ -432,7 +479,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 25px;
+  padding: 7px 22px 7px 22px;
 }
 
 .articles .container .main .col-4 .items .footer-items .ftop {
@@ -464,16 +511,16 @@ html {
   font-weight: 300;
 }
 
-.articles .container .main .pagination {
+.articles .container .pagination {
   height: 45px;
 }
 
-.articles .container .main .pagination .content {
+.articles .container .pagination .content {
   margin: 20px auto 0 auto;
   width: 200px;
 }
 
-.articles .container .main .pagination .content button {
+.articles .container .pagination .content button {
   cursor: pointer;
   text-align: center;
   color: black;
@@ -486,16 +533,16 @@ html {
   border: 1px solid rgba(129, 124, 124, 0.378);
 }
 
-.articles .container .main .pagination .content button:hover:not(.active) {
+.articles .container .pagination .content button:hover:not(.active) {
   background-color: #009f4d;
   color: #fff;
 }
 
-.articles .container .main .pagination .content #btnPrev {
+.articles .container .pagination .content #btnPrev {
   display: none;
 }
 
-.articles .container .main .pagination .content button.active {
+.articles .container .pagination .content button.active {
   background-color: #009f4d;
   color: white;
 }

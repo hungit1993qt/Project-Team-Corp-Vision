@@ -252,44 +252,80 @@ html {
 
      
    
-  .navbar-right{
-    position: fixed;
-    top: 30%;
-    right: 0;
-    bottom: 0;
-    z-index: 10;
-    ul{
-      width: 80px;
-      background: $bg-black;
-      list-style-type: none;
-      text-align: center;
-      padding: 20px 0;
-      border-top-left-radius: 9px;
-      border-bottom-left-radius: 9px;
+    #icon-navright{
+      position: fixed;
+      top: 36%;
+      right: 2px;
+      bottom: 0;
+      z-index: 17;
+      transition:all 0.2s;
+      display: block;
+      opacity: 1;
       
-      li{
-        padding-top: 10px;
-        margin: 0 auto;
-        width: 50px;
-        height: 50px;
-        &:first-child{
-          border-bottom: $while-1 0.2px groove;
-        }
+      a{
         
-        a{          
+        
+        border-radius: 37% 0 0 37%;
+        width: 18px;
+        height: 80px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $bg-black;         
+        cursor: pointer;
+        color: $while-3;        
+        text-decoration: none;
+        font-size: 0.8rem;
+        i{
+          line-height: 20px;
+          display: block;
+          text-align: center;
+          align-items: center;
+        }
+      }
+     }
+    .navbar-right{
+      position: fixed;
+      top: 30%;
+      right: 0;
+      bottom: 0;
+      z-index: 10;
+      transition:all 0.2s;
+      display: none;
+      opacity: 0;
+      
+      ul{
+        width: 80px;
+        background: $bg-black;
+        list-style-type: none;
+        text-align: center;
+        padding: 20px 0;
+        border-top-left-radius: 9px;
+        border-bottom-left-radius: 9px;
+        
+        li{
+          padding-top: 10px;
+          margin: 0 auto;
+          width: 50px;
+          height: 50px;
+          &:first-child{
+            border-bottom: $while-1 0.2px groove;
+          }
           
-          opacity: 0.5;
-          color: $while-3;        
-          text-decoration: none;
-          font-size: 0.8rem;
-          i{
-            line-height: 20px;
-            display: block;
+          a{          
+            cursor: pointer;
+            opacity: 0.5;
+            color: $while-3;        
+            text-decoration: none;
+            font-size: 0.8rem;
+            i{
+              line-height: 20px;
+              display: block;
+            }
           }
         }
       }
     }
-  }
 
 }
 .about-us{
@@ -384,6 +420,10 @@ html {
         color: $green-light;
         font-size: 79px;
         cursor: pointer;
+        transition: all 0.4s;
+        &:hover{
+          transform: scale(1.1);
+        }
       }
       a{
         margin-top: 30px;

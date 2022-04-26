@@ -240,12 +240,48 @@ html {
 
      
    
+  #icon-navright{
+    position: fixed;
+    top: 36%;
+    right: 2px;
+    bottom: 0;
+    z-index: 17;
+    transition:all 0.2s;
+    display: block;
+    opacity: 1;
+    
+    a{
+      
+      
+      border-radius: 37% 0 0 37%;
+      width: 18px;
+      height: 80px; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $bg-black;         
+      cursor: pointer;
+      color: $while-3;        
+      text-decoration: none;
+      font-size: 0.8rem;
+      i{
+        line-height: 20px;
+        display: block;
+        text-align: center;
+        align-items: center;
+      }
+    }
+   }
   .navbar-right{
     position: fixed;
     top: 30%;
     right: 0;
     bottom: 0;
     z-index: 10;
+    transition:all 0.2s;
+    display: none;
+    opacity: 0;
+    
     ul{
       width: 80px;
       background: $bg-black;
@@ -265,7 +301,7 @@ html {
         }
         
         a{          
-          
+          cursor: pointer;
           opacity: 0.5;
           color: $while-3;        
           text-decoration: none;
@@ -285,8 +321,9 @@ html {
 
 
 .articles{
-  width: 100%;
-  padding: 30px 10px 50px 10px;
+  width: 80%;
+  margin: auto;
+  padding: 30px 10px 20px 10px;
   
   .container{
     .title{
@@ -342,7 +379,8 @@ html {
             display: block;
             
             img{              
-              width: 100%;
+              max-width: 100%;
+              
               border-radius: 15px 15px 0 0;
               display: block;
               transition: all 0.4s;                           
@@ -353,18 +391,18 @@ html {
           }
           
           .detail{
-            padding: 25px;
-            line-height: 45px;
+            padding: 10px 22px 10px 22px;
+            line-height: 27px;
             border-bottom: 1px solid $while-1;
             background-color:$while-0;
             
             span{
               color: $grey-light-1;
-              font-size: 17px;
+              font-size: 14px;
               font-weight: 400;              
             }
             h2{
-              font-size: 20px;
+              font-size: 17px;
               font-weight: 600;
               color: $h2-color;
             }
@@ -374,7 +412,7 @@ html {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 25px;
+            padding: 7px 22px 7px 22px;
             
             .ftop{
               display: flex;
@@ -401,39 +439,40 @@ html {
           }
         }
       }
-      .pagination {
-        height: 45px;
-        .content{
-          margin:20px auto 0 auto;
-          width: 200px;
-          button{
-            cursor: pointer;
-            text-align: center;
-            color: black;
-            float: left;
-            padding: 12px 18px;
-            text-decoration: none;
-            margin-left: 5px;
-            transition: all 0.4s;
-            border: 1px solid rgba(129, 124, 124, 0.378);
-            &:hover:not(.active) {
-              background-color: $green-light;
-              color: $while-0;
-              }
-            }
-            #btnPrev{
-              display: none;
-            }
-            #btnNext{
-              
-            }
-          button.active {
+      
+    }
+    .pagination {
+      height: 45px;
+      .content{
+        margin:20px auto 0 auto;
+        width: 200px;
+        button{
+          cursor: pointer;
+          text-align: center;
+          color: black;
+          float: left;
+          padding: 12px 18px;
+          text-decoration: none;
+          margin-left: 5px;
+          transition: all 0.4s;
+          border: 1px solid rgba(129, 124, 124, 0.378);
+          &:hover:not(.active) {
             background-color: $green-light;
-            color: white;
+            color: $while-0;
+            }
           }
+          #btnPrev{
+            display: none;
+          }
+          #btnNext{
+            
+          }
+        button.active {
+          background-color: $green-light;
+          color: white;
         }
-                       
       }
+                     
     }
   }
 }

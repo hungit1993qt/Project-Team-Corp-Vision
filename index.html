@@ -114,9 +114,12 @@
     <div class="container">
       
     </div>
-    <div class="navbar-right">
+    <div id="icon-navright">
+      <a onclick="navrightShow()"><i class="fa-solid fa-angles-left"></i></a>
+    </div>
+    <div id="hide-navright" class="navbar-right">
       <ul>
-        <li><a href="javascript: history.go(+1)"><i class="fa-solid fa-angles-right"></i></a></li>
+        <li><a onclick="navrightHide()"><i class="fa-solid fa-angles-right"></i></a></li>
         <li><a href="javascript: history.go(-1)" href=""><i class="fa-solid fa-arrow-left"></i>Back</a></li>
         <li><a href=""><i class="fa-solid fa-download"></i>Download</a></li>
         <li><a href=""><i class="fa-solid fa-cart-shopping"></i>Buy</a></li>
@@ -644,6 +647,7 @@
         })
      window.onscroll = () => {    
       window.pageYOffset > 50 ? changeBackgroundNav.classList.add('changNavbar') : changeBackgroundNav.classList.remove('changNavbar');
+      
         }
   </script>
   
@@ -666,6 +670,7 @@
     items:1,
 })
   </script>
+  <script language="javascript" src="js/nav-right.js"></script>
  
   
   

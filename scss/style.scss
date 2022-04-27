@@ -1378,9 +1378,31 @@ html {
   
 }
 
+
+@media screen and (max-width: 860px){
+  .navbar{
+    .container{
+      .navbar-link{
+        display: block;
+        ul{
+          li{
+            a{
+              padding:6px 0 ;
+            }
+          }
+        }
+      }
+      .navbar-search{
+        display: none;
+      }
+    }
+  }
+}
+
 .changNavbar{
   background-color: $while-0;
   height: 80px;
+  padding-top:2px ;
   .container{
     height: 80px;
     .logo{
@@ -1410,28 +1432,14 @@ html {
   
 
 }
-@media screen and (max-width: 860px){
-  .navbar{
-    .container{
-      .navbar-link{
-        display: block;
-        ul{
-          li{
-            a{
-              padding:6px 0 ;
-            }
-          }
-        }
-      }
-      .navbar-search{
-        display: none;
-      }
-    }
-  }
-}
+
 @media screen and (max-width: 717px){
+  .header{
+    position: relative;
+  }
   .navbar{
     .container{
+      
       .navbar-link{
         display: none;
         position: absolute;
@@ -1460,9 +1468,7 @@ html {
         }
         
       }
-      .navbarHide{
-        display: block;
-      }
+      
       .nav-sm{
         display: block;
         background-color: $green-light;
@@ -1476,6 +1482,61 @@ html {
       }
     }
   }
+
+.navbarHide{
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.869);  
+  .container{
+    .navbar-link{
+      display: flex;
+      position: absolute;
+      top: 100%;
+      left: 40%;
+      ul{
+        li{
+          float: none;
+          padding-bottom: 30px;
+          .dropmenu{
+            .submenu{
+              
+              top:-33px;
+              left: 85px;
+              &::before{
+                top: 33px;
+                left: -1%;
+              }
+            }
+          }
+          a{
+            padding:6px 0 ;
+          }
+          .fa-solid{
+            transform: rotate(270deg);
+          }
+          
+        }
+      }
+      
+    }
+    
+    .nav-sm{
+      display: block;
+      background-color: $green-light;
+      padding: 10px;
+      color: $while-0;
+      border-radius: 10%;
+      font-size: 1.2rem;
+    }
+    .navbar-search{
+      display: none;
+    }
+  }
+}
+.changNavbar{
+  background-color: $while-0;
+
+  }
+
 }
 
 @media screen and (max-width: 600px) {

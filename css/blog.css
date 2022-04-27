@@ -182,12 +182,9 @@ html {
   line-height: 2.6rem;
 }
 
-.navbar .container .navbarHide {
-  display: block;
-}
-
 .navbar .container .nav-sm {
   display: none;
+  cursor: pointer;
 }
 
 .carousel {
@@ -729,16 +726,21 @@ html {
     font-size: 1.2rem;
   }
   .carousel {
-    height: 21rem;
+    height: 38rem;
   }
-  .carousel .item {
-    padding-top: 6%;
+  .carousel #slider .owl-item .item img {
+    height: 600px;
   }
-  .carousel .item .detail {
+  .carousel #slider .owl-item .item .detail {
     padding: 5%;
+    left: 0;
+    top: 24%;
   }
-  .carousel .item .detail h2 {
+  .carousel #slider .owl-item .item .detail h2 {
     font-size: 45px;
+  }
+  .carousel .container {
+    height: 30rem;
   }
   .articles {
     padding: 6% 10%;
@@ -816,6 +818,10 @@ html {
   color: #3f3a64;
 }
 
+.changNavbar .carousel #slider .owl-item .item .detail h2 {
+  font-size: 15px;
+}
+
 @media screen and (max-width: 717px) {
   .header {
     position: relative;
@@ -823,7 +829,7 @@ html {
   .navbar .container .navbar-link {
     display: none;
     position: absolute;
-    left: 44%;
+    left: 40%;
   }
   .navbar .container .navbar-link ul li {
     float: none;
@@ -896,6 +902,10 @@ html {
   .navbarHide .container .navbar-search {
     display: none;
   }
+  .navbarHide .container .fa-xmark {
+    padding: 10px 13px 10px 12px;
+    font-size: 20px;
+  }
   .changNavbar {
     background-color: #fff;
   }
@@ -947,25 +957,40 @@ html {
   }
 }
 
+@media screen and (max-width: 520px) {
+  .navbar .container h1 {
+    font-size: 22px;
+  }
+  .navbar .container h1 a .logo p {
+    font-size: 0.7rem;
+    padding-left: 0rem;
+  }
+  .navbarHide .container .navbar-link {
+    left: 36%;
+  }
+}
+
 @media screen and (max-width: 400px) {
-  .carousel {
-    height: 16rem;
-    margin-bottom: 30px;
+  .navbarHide .container .navbar-link {
+    left: 32%;
   }
-  .carousel .item {
-    padding-top: 22%;
+  .carousel #slider .owl-item .item img {
+    height: 450px;
   }
-  .carousel .item .detail h2 {
+  .carousel #slider .owl-item .item .detail h2 {
     font-size: 25px;
   }
-  .carousel .item .detail p {
-    font-size: 15px;
-  }
-  .carousel .item .detail a {
+  .carousel #slider .owl-item .item .detail a {
     width: 50%;
+    font-size: 15px;
+    padding: 0;
+    margin-top: 10px;
+  }
+  .carousel #slider .owl-item .item .detail p {
+    font-size: 14px;
   }
   .articles {
-    padding: 0 3%;
+    padding: 30px 3%;
   }
   .articles .container .title span {
     font-size: 18px;

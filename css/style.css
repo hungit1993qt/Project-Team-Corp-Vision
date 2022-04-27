@@ -199,6 +199,23 @@ html {
   position: relative;
 }
 
+.carousel #slider .owl-item .item svg {
+  width: 100%;
+  overflow: hidden;
+  vertical-align: middle;
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.carousel #slider .owl-item .item svg path {
+  width: 100%;
+  fill: #fff;
+  z-index: -1;
+}
+
 .carousel #slider .owl-item .item::after {
   content: "";
   position: absolute;
@@ -213,11 +230,12 @@ html {
 .carousel #slider .owl-item .item img {
   -o-object-fit: cover;
      object-fit: cover;
+  height: 700px;
 }
 
 .carousel #slider .owl-item .item .detail {
   position: absolute;
-  top: 27%;
+  top: 24%;
   left: 18%;
   z-index: 100;
 }
@@ -241,7 +259,7 @@ html {
 }
 
 .carousel #slider .owl-item .item .detail a {
-  margin-top: 30px;
+  margin-top: 25px;
   width: 30%;
   text-align: center;
   display: inline-block;
@@ -255,23 +273,7 @@ html {
   padding: 6px;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-}
-
-.carousel svg {
-  width: 100%;
-  overflow: hidden;
-  vertical-align: middle;
-  z-index: 1;
-  position: absolute;
-  bottom: 54px;
-  right: 0;
-  left: 0;
-}
-
-.carousel svg path {
-  width: 100%;
-  fill: #fff;
-  z-index: -1;
+  cursor: pointer;
 }
 
 .carousel #icon-navright {
@@ -361,7 +363,12 @@ html {
   display: block;
 }
 
+.carousel .owl-theme .owl-nav {
+  margin-top: 20px;
+}
+
 .about-us {
+  margin-top: 5%;
   padding: 50px 0;
 }
 
@@ -1445,24 +1452,22 @@ html {
   .carousel {
     height: 38rem;
   }
+  .carousel #slider .owl-item .item img {
+    height: 600px;
+  }
   .carousel #slider .owl-item .item .detail {
     padding: 5%;
     left: 0;
+    top: 24%;
   }
   .carousel #slider .owl-item .item .detail h2 {
     font-size: 45px;
-  }
-  .carousel svg {
-    bottom: -7%;
-    right: 0;
-    left: 0;
   }
   .carousel .container {
     height: 30rem;
   }
   .about-us {
     padding-top: 10%;
-    border-top: 1px solid #666;
   }
   .about-us .container {
     padding: 0 15px;
@@ -1627,6 +1632,10 @@ html {
   color: #3f3a64;
 }
 
+.changNavbar .carousel #slider .owl-item .item .detail h2 {
+  font-size: 15px;
+}
+
 @media screen and (max-width: 717px) {
   .header {
     position: relative;
@@ -1634,7 +1643,7 @@ html {
   .navbar .container .navbar-link {
     display: none;
     position: absolute;
-    left: 44%;
+    left: 40%;
   }
   .navbar .container .navbar-link ul li {
     float: none;
@@ -1707,6 +1716,37 @@ html {
   .navbarHide .container .navbar-search {
     display: none;
   }
+  .navbarHide .container .fa-xmark {
+    padding: 10px 13px 10px 12px;
+    font-size: 20px;
+  }
+  .about-us .container .col-left h2 {
+    font-size: 28px;
+  }
+  .challenges .container .col-left h2 {
+    font-size: 28px;
+  }
+  .service .container .title h2 {
+    font-size: 28px;
+  }
+  .project .container .title h2 {
+    font-size: 28px;
+  }
+  .result .container .col-rightr h2 {
+    font-size: 28px;
+  }
+  .review .container .title h2 {
+    font-size: 28px;
+  }
+  .review .container .main .item {
+    padding: 1px 29px;
+  }
+  .review .container .main .item span {
+    font-size: 16px;
+  }
+  .articles .container .title h2 {
+    font-size: 28px;
+  }
   .changNavbar {
     background-color: #fff;
   }
@@ -1719,15 +1759,15 @@ html {
   .carousel {
     height: 28rem;
   }
+  .carousel #slider .owl-item .item img {
+    height: 520px;
+  }
   .carousel #slider .owl-item .item .detail {
     padding: 5%;
     left: 0;
   }
   .carousel #slider .owl-item .item .detail h2 {
     font-size: 35px;
-  }
-  .carousel svg {
-    bottom: -48%;
   }
   .owl-carousel .owl-nav {
     text-align: center;
@@ -1736,7 +1776,7 @@ html {
     margin-top: 0;
   }
   .about-us {
-    padding-top: 41%;
+    margin-top: 22%;
   }
   .project .container .title span {
     font-size: 25px;
@@ -1806,9 +1846,37 @@ html {
   }
 }
 
+@media screen and (max-width: 520px) {
+  .navbar .container h1 {
+    font-size: 22px;
+  }
+  .navbar .container h1 a .logo p {
+    font-size: 0.7rem;
+    padding-left: 0rem;
+  }
+  .navbarHide .container .navbar-link {
+    left: 36%;
+  }
+}
+
 @media screen and (max-width: 400px) {
+  .navbarHide .container .navbar-link {
+    left: 32%;
+  }
+  .carousel #slider .owl-item .item img {
+    height: 450px;
+  }
+  .carousel #slider .owl-item .item .detail h2 {
+    font-size: 25px;
+  }
   .carousel #slider .owl-item .item .detail a {
     width: 50%;
+    font-size: 15px;
+    padding: 0;
+    margin-top: 10px;
+  }
+  .carousel #slider .owl-item .item .detail p {
+    font-size: 14px;
   }
   .about-us {
     margin-top: 30%;

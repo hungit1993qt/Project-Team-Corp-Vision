@@ -437,51 +437,12 @@ html {
     }
   }
 }
-.challenges{
+
+
+.processes{
   padding:50px 0;
   background-color: $bg-while-lights;
-  .container{
-    display: flex;
-    flex-direction: row;
-    .col-left{
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      padding: 3%;
-      line-height: 2.5rem;
-      a{
-        margin-top: 30px;
-        width: 45%;
-        text-align: center;
-        display: inline-block;
-        line-height: 3rem;
-        text-decoration: none;
-        font-weight: 600;
-        color: $while-0;
-        font-size: 1.1rem;
-        background-color: $green-light;;
-        border-radius: 10px;
-        padding: 6px;
-        transition: all 0.4s;
-        &:hover{
-          background-color:$bg-green-dark;
-        }
-        
-      }
-      p{
-        margin: 1.5rem 0;
-        line-height: 27px;
-        opacity: 0.8;
-        color: $grey-light;
-
-      }
-      h2{
-        font-size: 35px;
-        line-height: 2.5rem;
-        font-weight: 700;
-        color: $h2-color;
-        }
-      }
+  .container{   
       span{
         font-size: 0.9rem;
         font-weight: 600;
@@ -491,37 +452,162 @@ html {
         color: $grey-lightes;
       }
     }
-    .col-right{
-      width: 50%;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 25px;
-      align-content: center;
-     
-      
-      .items-grid{
-        background-color:$while-0;
-        border-radius: 10px;
-        text-align: center;
-        padding:50px 0 ;
-        transition: all 0.4s;
-        box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
-        &:hover{
-          transform: translatey(-8px);
-          box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.04);
-        }
-        h2{
-          margin-top: 20px;
-          transition: all 0.4s;
-          color: $h2-color;
-          &:hover{
-            color: $bg-green-light;
-        }
-      }      
+    .title{
+      text-align: center;
+      padding: 30px 0;
+      h2{
+        font-size: 30px;
+        line-height: 45px;
+        font-weight: 700;
+        color: $h2-color;
+      }
+      span{
+        color: $grey-lightes;
+        letter-spacing: 1px;
+        font-weight: 600;
+        line-height: 30px;
+        font-size: 14px;
+      }
     }
-  }
+    .row{
+      width: 100%;
+      display: flex;
+      align-content: center;
+      .col{
+        width: calc(100%/3);
+        padding: 15px;
+        .items{          
+          background-color:$while-0;
+          border-radius: 10px;
+          text-align: center;
+          padding:30px 15px;
+          transition: all 0.4s;
+          box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
+          &:hover{
+            transform: translatey(-8px);
+            box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.04);
+          }
+          h2{
+            margin-top: 20px;
+            transition: all 0.4s;
+            color: $h2-color;
+            &:hover{
+              color: $bg-green-light;
+          }
+          }
+          p{
+            margin: 1.5rem 0;
+            line-height: 27px;
+            opacity: 0.8;
+            color: #666;
+          }      
+      }
+    }
+    }
+    
 }
 
+.business{
+  padding:50px 0;
+  background-color: $bg-while-lights;
+  .container{   
+      span{
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 30px;
+        letter-spacing: 1px;
+        color: $grey-lightes;
+      }
+    }
+    .title{
+      text-align: center;
+      padding: 30px 0;
+      h2{
+        font-size: 30px;
+        line-height: 45px;
+        font-weight: 700;
+        color: $h2-color;
+      }
+      span{
+        color: $grey-lightes;
+        letter-spacing: 1px;
+        font-weight: 600;
+        line-height: 30px;
+        font-size: 14px;
+      }
+    }
+    .row{
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      .col{
+        width: 100%;
+        padding: 15px;
+        .items{        
+          padding: 15px;  
+          background-color:$while-0;
+          border-radius: 10px;
+          text-align: center;          
+          transition: all 0.4s;
+          box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
+          
+          h2{
+            margin-top: 20px;
+            transition: all 0.4s;
+            color: $h2-color;
+            &:hover{
+              color: $bg-green-light;
+          }
+          }
+          p{
+            margin: 1.5rem 0;
+            line-height: 27px;
+            opacity: 0.8;
+            color: #666;
+          }
+          a{
+            text-decoration: none;
+            margin-bottom: 5%;
+            display: inline-block;
+            padding: 15px 50px;
+            font-size: 16px;
+            line-height: 18px;
+            font-weight: 600;
+            transition: all 0.4s;
+            border-radius: 8px;
+            color: $while-0;
+            border: none;
+            background-color: $bg-green-light;
+            cursor: pointer;
+            &:hover{
+             background-color: $bg-green-dark;
+            
+          }
+          }      
+        }
+        .items-pic1{
+          background-image: url(../img/service1.jpg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 100%;
+          height: 100%;
+                   
+        }
+        .items-pic2{
+          background-image: url(../img/service2.jpg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 100%;
+          height: 100%;        
+        }
+    }
+    }
+    
+}
 
 
 .solution{
@@ -1144,23 +1230,7 @@ html {
     height: 23rem;
   }
 
-  .challenges{
-    border-top: 1px solid $grey-light;
-  .container{
-    padding: 0 15px;
-    flex-direction: column;
-    
-    .col-left{
-      width: 100%;
-      padding:0 10%;
-    }
-    .col-right{
-      padding-top: 20px;
-      width: 100%;
-      padding:10%;
-    }
-    }
-  }
+ 
   
   .articles{
     padding: 0 10%;
@@ -1178,6 +1248,27 @@ html {
     }
     
   }
+
+  .processes{
+    padding: 20px 10%;
+    .container{
+      .title{
+
+      }
+      .row{
+        flex-wrap: wrap;
+        justify-content: center;
+        .col{
+          width: 50%;          
+          .items{            
+            
+          }
+        }
+      }
+      
+    }
+  }
+
   .footer{
     padding-left: 50px;
     .container{
@@ -1197,21 +1288,7 @@ html {
       }
     }
   }
-  .mean{
-    .container{
-      .main{
-        .row{
-          .col{
-            width: 100%;
-            padding: 0 10%;
-            .items{
-              padding: 5% 0;
-            }
-          }
-        }
-      }
-    }
-  }
+ 
 }
 
 
@@ -1231,6 +1308,51 @@ html {
       }
       .navbar-search{
         display: none;
+      }
+    }
+  }
+
+  .carousel{
+    #slider{
+      .owl-item{
+        .item{
+          .detail{
+            h2{
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+    
+  }
+
+  .processes{
+    .container{
+      .title{
+
+      }
+      .row{
+        
+        .col{
+          width: 100%;
+        }
+      }
+    }
+  }
+  .business{
+    .container{
+      .row{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        .col{
+          .items-pic1{
+            height: 353.5px;
+          }
+          .items-pic2{
+            height: 353.5px;
+          }
+        }
       }
     }
   }
@@ -1266,22 +1388,11 @@ html {
       }
     }
   }
-  .carousel{
-    #slider{
-      .owl-item{
-        .item{
-          .detail{
-            h2{
-              font-size: 15px;
-            }
-          }
-        }
-      }
-    }
-    
-  }
-
 }
+  
+
+
+
 
 @media screen and (max-width: 717px){
   .header{
@@ -1596,34 +1707,7 @@ html {
     }
   }
   
-  .challenges{
-    .container{
-      .col-left{
-        padding: 0 2%;
-        span{
-          font-size: 13px;
-          text-align: center center;
-        }h2{
-          font-size: 22px;
-        }
-        p{
-          font-size: 13px;
-          text-align: center center;
-        }
-      }
-      .col-right{
-        margin-top: 30px;
-        padding: 0 1%;
-        .items-grid{
-          padding: 18px 0;
-          h2{
-            font-size: 15px;
-            
-          }
-        }
-      }
-    }
-  }
+ 
 
  
 

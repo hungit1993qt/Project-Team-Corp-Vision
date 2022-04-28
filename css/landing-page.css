@@ -466,6 +466,76 @@ html {
   margin-top: 20px;
 }
 
+.let-talk {
+  padding: 50px 0;
+}
+
+.let-talk .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.let-talk .container .col-left {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3%;
+  line-height: 2rem;
+}
+
+.let-talk .container p {
+  margin: 1.5rem 0;
+  line-height: 27px;
+  opacity: 0.8;
+  color: #666;
+}
+
+.let-talk .container h2 {
+  font-size: 35px;
+  line-height: 2.5rem;
+  font-weight: 700;
+  color: #3f3a64;
+}
+
+.let-talk .col-right {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.let-talk .col-right a {
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+  font-size: 1.1rem;
+  background-color: #009f4d;
+  border-radius: 10px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  padding: 10px;
+  width: 50%;
+}
+
+.let-talk .col-right a:hover {
+  background-color: #076b38;
+}
+
 .company {
   padding: 50px 0;
   background-color: #fff;
@@ -2231,6 +2301,18 @@ html {
     width: 100%;
     padding: 0 10%;
   }
+  .let-talk .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .let-talk .container .col-left {
+    padding: 0 10%;
+    width: 100%;
+  }
+  .let-talk .container .col-right {
+    width: 100%;
+    padding: 0 10%;
+  }
   .company .container {
     padding: 0 15px;
     -webkit-box-orient: vertical;
@@ -2398,6 +2480,9 @@ html {
   .mean .container .main .row .col {
     width: 100%;
     padding: 0 10%;
+  }
+  .mean .container .main .row .col .items {
+    padding: 5% 0;
   }
 }
 
@@ -2681,6 +2766,13 @@ html {
   }
   .advantage .container .row .col {
     width: 100%;
+  }
+  .let-talk .container .col-left h2 {
+    font-size: 30px;
+  }
+  .let-talk .container .col-right a {
+    width: 70%;
+    font-size: 14px;
   }
   .let-project .container .form-project .form-input input {
     width: 100%;

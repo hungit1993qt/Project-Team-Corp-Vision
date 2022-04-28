@@ -412,6 +412,59 @@ html {
   }
 }
 
+.let-talk{
+  padding:50px 0;
+  .container{
+    display: flex;
+    flex-direction: row;
+    .col-left{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      padding: 3%;
+      line-height: 2rem;      
+      }
+      p{
+        margin: 1.5rem 0;
+        line-height: 27px;
+        opacity: 0.8;
+        color: $grey-light;
+
+      }
+      h2{
+        font-size: 35px;
+        line-height: 2.5rem;
+        font-weight: 700;
+        color: $h2-color;
+      }
+    }
+    .col-right{
+      width: 50%;
+      display: flex;
+      align-items: center;
+      a{
+        text-align: center;
+        display: inline-block;        
+        text-decoration: none;
+        font-weight: 600;
+        color: #fff;
+        font-size: 1.1rem;
+        background-color: $green-light;
+        border-radius: 10px;
+        transition: all 0.4s;
+        padding: 10px;
+        width: 50%;
+        &:hover{
+          background-color:$bg-green-dark;
+        }
+        
+        
+        
+      }     
+    }
+  }
+
+
 .company{
   padding:50px 0;
   background-color: $while-0;
@@ -1952,7 +2005,19 @@ html {
     }
     
   }
-  
+  .let-talk{
+    .container{
+      flex-wrap: wrap;
+      .col-left{
+        padding:  0 10%;
+        width: 100%;
+      }
+      .col-right{
+        width: 100%;
+        padding:  0 10%;
+      }
+    }
+  }
 
   .company{
     
@@ -2156,6 +2221,9 @@ html {
           .col{
             width: 100%;
             padding: 0 10%;
+            .items{
+              padding: 5% 0;
+            }
           }
         }
       }
@@ -2549,6 +2617,22 @@ html {
       .row{
         .col{
           width: 100%;
+        }
+      }
+    }
+  }
+
+  .let-talk{
+    .container{
+      .col-left{
+        h2{
+          font-size: 30px;
+        }
+      }
+      .col-right{
+        a{
+          width: 70%;
+          font-size:14px;
         }
       }
     }

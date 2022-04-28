@@ -1596,6 +1596,89 @@ html {
   }
 }
 
+.mean{
+  padding: 3%;
+  background-color: $bg-while-light;
+  .container{
+    .title{
+      text-align: center;
+      padding: 5% 0;
+      h2{
+        font-size: 30px;
+        line-height: 45px;
+        font-weight: 700;
+        color: $h2-color;
+        margin-bottom: 15px;
+      }
+      span{
+        color: $grey-light;
+        font-size: 17px;
+        line-height: 27px;
+        opacity: .8;
+        width: 75%;
+        display: block;
+        margin: auto;
+        
+      }
+    }
+    .main{
+      .row{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .col{
+          width: 50%;
+          .items{
+            display: flex;
+            padding: 5%;            
+            .items-left{
+              i{
+                font-size: 25px;
+                padding: 25px;                
+                border-radius: 10px;
+
+              }
+              i.fa-briefcase{
+                border: 1px solid $green-light;
+                color: $green-light;
+              }
+              i.fa-gears{
+                border: 1px solid $bg-black;
+                color: $bg-black;
+              }
+              i.fa-magnifying-glass-plus{
+                border: 1px solid $red;
+                color: $red
+              }
+              i.fa-chart-area{
+                border: 1px solid $orange;
+                color: $orange
+              }
+            }
+            .items-right{
+              margin-left: 10%;
+              h2{
+                font-size: 23px;
+                line-height: 20px;
+                font-weight: 700;
+                color: $h2-color;
+                margin-bottom: 15px;
+              }
+              span{
+                color: $grey-light;
+                font-size: 15px;
+                line-height: 20px;
+                opacity: .8;
+              };
+            }
+          }
+        }
+      }
+    }
+    
+  }
+}
+
 .together{  
   width: 100%;
   background-image: url(../img/bg-map.png);
@@ -2066,7 +2149,18 @@ html {
       }
     }
   }
-  
+  .mean{
+    .container{
+      .main{
+        .row{
+          .col{
+            width: 100%;
+            padding: 0 10%;
+          }
+        }
+      }
+    }
+  }
 }
 
 
@@ -2589,6 +2683,29 @@ html {
         } 
       } 
     } 
+  }
+
+  .mean{
+    .container{
+      .main{
+        .row{
+          .col{
+            width: 100%;
+            padding: 0 2%;
+            .items{
+              .items-right{
+                h2{
+                  font-size: 18px;
+                }
+                span{
+                  font-size: 11px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
   .about-us{
     .container{

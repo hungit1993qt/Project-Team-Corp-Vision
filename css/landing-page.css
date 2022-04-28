@@ -1844,6 +1844,99 @@ html {
   background-color: #076b38;
 }
 
+.mean {
+  padding: 3%;
+  background-color: #f8f9fa;
+}
+
+.mean .container .title {
+  text-align: center;
+  padding: 5% 0;
+}
+
+.mean .container .title h2 {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 700;
+  color: #3f3a64;
+  margin-bottom: 15px;
+}
+
+.mean .container .title span {
+  color: #666;
+  font-size: 17px;
+  line-height: 27px;
+  opacity: .8;
+  width: 75%;
+  display: block;
+  margin: auto;
+}
+
+.mean .container .main .row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.mean .container .main .row .col {
+  width: 50%;
+}
+
+.mean .container .main .row .col .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5%;
+}
+
+.mean .container .main .row .col .items .items-left i {
+  font-size: 25px;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.mean .container .main .row .col .items .items-left i.fa-briefcase {
+  border: 1px solid #009f4d;
+  color: #009f4d;
+}
+
+.mean .container .main .row .col .items .items-left i.fa-gears {
+  border: 1px solid #0D1326;
+  color: #0D1326;
+}
+
+.mean .container .main .row .col .items .items-left i.fa-magnifying-glass-plus {
+  border: 1px solid red;
+  color: red;
+}
+
+.mean .container .main .row .col .items .items-left i.fa-chart-area {
+  border: 1px solid #ffa600;
+  color: #ffa600;
+}
+
+.mean .container .main .row .col .items .items-right {
+  margin-left: 10%;
+}
+
+.mean .container .main .row .col .items .items-right h2 {
+  font-size: 23px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #3f3a64;
+  margin-bottom: 15px;
+}
+
+.mean .container .main .row .col .items .items-right span {
+  color: #666;
+  font-size: 15px;
+  line-height: 20px;
+  opacity: .8;
+}
+
 .together {
   width: 100%;
   background-image: url(../img/bg-map.png);
@@ -2302,6 +2395,10 @@ html {
   .footer .container .main .row-footer .col-footer .items-footer {
     padding: 30px;
   }
+  .mean .container .main .row .col {
+    width: 100%;
+    padding: 0 10%;
+  }
 }
 
 @media screen and (max-width: 860px) {
@@ -2675,6 +2772,16 @@ html {
   }
   .carousel #slider .owl-item .item .detail p {
     font-size: 14px;
+  }
+  .mean .container .main .row .col {
+    width: 100%;
+    padding: 0 2%;
+  }
+  .mean .container .main .row .col .items .items-right h2 {
+    font-size: 18px;
+  }
+  .mean .container .main .row .col .items .items-right span {
+    font-size: 11px;
   }
   .about-us {
     margin-top: 30%;

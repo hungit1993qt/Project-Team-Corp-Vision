@@ -350,22 +350,37 @@ html {
       display: flex;
       flex-direction: column;
       padding: 3%;
-      line-height: 2rem;
-      a{
-        display: inline-block;
-        line-height: 3rem;
-        text-decoration: none;
-        font-weight: 600;
-        color: $h2-color;
-        font-size: 1.1rem;
-        i{
-          margin-right: 10px;
-          color: $green-light;
-          font-size: 1.2rem;
+      line-height: 2rem; 
+        span{
+          width: auto;
+          line-height: 3rem;          
+          font-weight: 600;
+          color: $h2-color;
+          font-size: 1.1rem;          
+          a{
+            background-image: linear-gradient(90deg,$green-light,$red);
+            background-size: 0% 2px;
+            background-repeat: no-repeat;
+            background-position: left bottom;
+            transition: background-size 300ms ease;
+            text-decoration: none;
+            cursor: pointer;
+            
+            &:hover{
+              background-size: 100% 2px;
+            }
+          }
+          i{
+            margin-right: 10px;
+            color: $green-light;
+            font-size: 1.2rem;
+            
+          }
           
         }
-      }
-      p{
+        
+        
+       p{
         margin: 1.5rem 0;
         line-height: 27px;
         opacity: 0.8;
@@ -438,6 +453,7 @@ html {
         border-radius: 10px;
         padding: 6px;
         transition: all 0.4s;
+        
         &:hover{
           background-color:$bg-green-dark;
         }

@@ -12,10 +12,10 @@
   <body>
     <header id="header"></header>
     <div class="title-header">
-      <!-- <div class="container"> -->
+     
       <h1>About us</h1>
       <p>Experience you can trust, service you can count on.</p>
-      <!-- </div> -->
+      
     </div>
     <section class="about-your-company">
       <div class="container">
@@ -57,7 +57,7 @@
           </div>
         </div>
       </div>
-    </section>mammmm
+    </section>
     <section class="about-feature">
       <div class="container">
         <div class="row">
@@ -343,5 +343,60 @@
         $("#footer").load("../layout/footer.html");
       });
     </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+  $('#slider .owl-carousel').owlCarousel({
+  loop:false,
+  margin:10,
+  nav:false,
+  items:1,
+  dots:false
+})
+</script>
+<script>
+  var col = document.getElementsByClassName("col-4");    
+  var page1 =document.getElementById("page-1");
+  var page2 =document.getElementById("page-2");
+  var page3 =document.getElementById("page-3");
+  var activeBtnP1 =document.getElementById("p1");
+  var activeBtnP2 =document.getElementById("p2");
+  var btnPrevs = document.getElementById("btnPrev");
+  var btnNexts = document.getElementById("btnNext");
+  var heightMainAr = document.getElementById('height-2');
+  function showPage2(){
+    page1.style.display="none";
+    page2.style.display="none";
+    page3.style.display="flex";
+    activeBtnP1.style.backgroundColor="#eee"
+    activeBtnP1.style.color="#000"
+    activeBtnP2.style.backgroundColor="#009f4d"
+    activeBtnP2.style.color="#fff"
+    btnPrevs.style.display="block"
+    btnNexts.style.display="none"
+    heightMainAr.style.height = '886px'
+}
+function showPage1(){
+    page1.style.display="flex";
+    page2.style.display="flex";
+    page3.style.display="none";
+    activeBtnP2.style.backgroundColor="#eee"
+    activeBtnP2.style.color="#000"
+    activeBtnP1.style.backgroundColor="#009f4d"
+    activeBtnP1.style.color="#fff"
+    btnPrevs.style.display="none"
+    btnNexts.style.display="block"
+    heightMainAr.style.height = 'auto'
+}
+function comBack(){
+  history.back();
+} 
+
+</script>
+<script language="javascript" src="js/nav-right.js"></script>
+<script language="javascript" src="js/back-to-top.js"></script>
+<script language="javascript" src="js/menuSmall.js"></script>
+
   </body>
 </html>

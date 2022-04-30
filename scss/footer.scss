@@ -1,4 +1,9 @@
 @import "../scss/variable";
+
+.container{
+  width:1280px !important;
+  max-width: 100% !important;
+}
 #footer {
   background-color: $c1-900;
   padding: 2rem 0;

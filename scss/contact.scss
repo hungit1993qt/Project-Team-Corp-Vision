@@ -1,6 +1,29 @@
 @import "./variable";
+
 body{
   background: $c1-100 !important;
+}
+
+.container{
+  width:1280px !important;
+  max-width: 100% !important;
+}
+
+.title-header{
+  position: absolute;
+  top: 37.5%;
+  margin: 0 37.5%;
+  text-align: center;
+  color: white;
+  z-index: 1;
+
+  .h1{
+    @include text($text-2xl, $font-bold, $while-0)
+  }
+  .p{
+    @include text($text-lg, $font-bold, $while-0)
+  }
+ 
 }
 .full-services {
   padding-top: 4rem;
@@ -77,9 +100,6 @@ body{
     iframe{
         width: 100%;
     }
-}
-.container{
-   
 }
 .talk-project{
   padding: 3rem 0;

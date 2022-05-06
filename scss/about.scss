@@ -12,7 +12,7 @@
   z-index: 1;
 
   .h1{
-    @include text($text-2xl, $font-bold, $while-0)
+    @include text($text-3xl, $font-bold, $while-0)
   }
   .p{
     @include text($text-lg, $font-bold, $while-0)

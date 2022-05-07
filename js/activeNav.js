@@ -6,13 +6,15 @@
 //     this.classList.add("active");
 //   })
 // });
-const activeNav = window.location.pathname;
-const navLinks = document.querySelectorAll("ul li a").forEach(link => {
-    if(link.href.includes(`${activeNav}`)){
-        link.classList.add("active");
-        console.log(`${activeNav}`);
-    }
-    else{
-        link.classList.remove("active");
-    }
-})
+// const activeNav = window.location.pathname;
+// const navLinks = document.querySelectorAll("ul li a").forEach(link => {
+//     if(link.href.includes(`${activeNav}`)){
+//         console.log(`${activeNav}`);
+//         link.classList.add("active");
+//     }
+//     else{
+//         link.classList.remove("active")
+//     }
+        
+// })
+

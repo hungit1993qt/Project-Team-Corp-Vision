@@ -124,11 +124,6 @@
   float: none;
 }
 
-.navbar .container .navbar-link ul li .dropmenu .submenu li .active {
-  opacity: 1;
-  color: #009f4d;
-}
-
 .navbar .container .navbar-link ul li .dropmenu .submenu li a {
   width: 140px;
   color: #3f3a64;
@@ -144,11 +139,6 @@
 
 .navbar .container .navbar-link ul li .dropmenu:hover .submenu {
   display: block;
-}
-
-.navbar .container .navbar-link ul li a.active:first-child {
-  opacity: 1;
-  color: #009f4d;
 }
 
 .navbar .container .navbar-search {
@@ -495,7 +485,7 @@
   .navbar .container .nav-sm {
     display: block;
     background-color: #009f4d;
-    padding: 0.4rem;
+    padding: 0.3rem;
     color: #fff;
     border-radius: 10%;
     font-size: 1.2rem;

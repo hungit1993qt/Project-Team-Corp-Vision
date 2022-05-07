@@ -108,7 +108,7 @@ html {
 }
 
 .navbar .container .navbar-link ul li .dropmenu .submenu::before {
-  content: '';
+  content: "";
   width: 14px;
   height: 14px;
   background: #fff;
@@ -255,8 +255,8 @@ html {
   line-height: 30px;
   max-width: 600px;
   color: #fff;
-  letter-spacing: 0.010em;
-  opacity: .9;
+  letter-spacing: 0.01em;
+  opacity: 0.9;
 }
 
 .carousel #slider .owl-item .item .detail a {
@@ -624,7 +624,7 @@ html {
 }
 
 .service .container .main .col-4 .items {
-  width: calc(100%/3);
+  width: calc(100% / 3);
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -722,7 +722,7 @@ html {
 }
 
 .project .container .main .row-project .col-project {
-  width: calc(100%/3);
+  width: calc(100% / 3);
   padding: 15px 15px;
 }
 
@@ -806,7 +806,7 @@ html {
 }
 
 .project .container .brand .items-brand {
-  width: calc(100%/5);
+  width: calc(100% / 5);
   padding: 30px;
 }
 
@@ -998,7 +998,8 @@ html {
   font-size: 14px;
 }
 
-.review .container .main .owl-theme .owl-dots .owl-dot.active span, .review .container .main .owl-theme .owl-dots .owl-dot:hover span {
+.review .container .main .owl-theme .owl-dots .owl-dot.active span,
+.review .container .main .owl-theme .owl-dots .owl-dot:hover span {
   -webkit-transform: scale(1.7);
           transform: scale(1.7);
 }
@@ -1100,7 +1101,7 @@ html {
 }
 
 .articles .container .main .col-4 .items {
-  width: calc(100%/3);
+  width: calc(100% / 3);
   height: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1419,7 +1420,8 @@ html {
   text-align: center;
 }
 
-.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
   font-size: 24px;
   border-radius: 50%;
   padding: 0 14px 4px 14px !important;
@@ -1550,7 +1552,7 @@ html {
             justify-content: center;
   }
   .project .container .main .brand .items-brand {
-    width: calc(100%/3);
+    width: calc(100% / 3);
     padding: 30px;
   }
   .result {
@@ -1789,7 +1791,8 @@ html {
   .owl-carousel .owl-nav {
     text-align: center;
   }
-  .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel .owl-nav button.owl-next {
     margin-top: 0;
   }
   .about-us {
@@ -1816,7 +1819,7 @@ html {
             justify-content: center;
   }
   .project .container .main .brand .items-brand {
-    width: calc(100%/2);
+    width: calc(100% / 2);
     padding: 30px;
   }
   .service .container .title h2 {

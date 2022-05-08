@@ -104,6 +104,10 @@
         @include button($c2, $text-base, $font-medium, $c1);
         padding: 0.9rem 3.2rem;
         border-radius: 0.5rem;
+        cursor: pointer !important;
+        &:hover{
+          background-color: #0d8428;
+        }
       }
       .play-video {
         margin-top: 1.6rem;
@@ -115,8 +119,7 @@
           width: 4.3rem;
           height: 4.3rem;
           font-size: 1.3rem;
-          padding-left: 0.5rem;
-
+          padding-left: 0.2rem;
           text-align: center;
           line-height: 4rem;
           border-radius: 50%;
@@ -183,14 +186,26 @@
 
         .item-detail {
           margin-left: 1.5rem;
-          h1 {
-            @include text($text-lg, $font-medium, $c3);
-            opacity: 0.7;
+          a{
+            text-decoration: none;
+            cursor: pointer !important;
+
+            h1 {
+              @include text($text-lg, $font-medium, $c3);
+              opacity: 0.7;
+              transition: all 0.5s;
+
+              &:hover {
+                color:$green-light;
+              }
+            }
+           
           }
           p {
             @include text($text-base, $font-medium, $c3);
             opacity: 0.5;
           }
+         
         }
       }
     }
@@ -298,7 +313,7 @@
             width: 4.3rem;
             height: 4.3rem;
             font-size: 1.3rem;
-            padding-left: 0.5rem;
+            padding-left: 0.2rem;
   
             text-align: center;
             line-height: 4rem;
@@ -308,6 +323,7 @@
             -webkit-text-stroke-color: $c1;
             border: 3px solid $c1;
             transition: all 0.5s ease-in-out;
+            cursor: pointer;
   
             &:hover {
               transform: scale(1.2);
@@ -418,6 +434,12 @@
               h1 {
                 @include text($text-md, $font-SemiBold, $c1-700);
                 padding-top: 1rem;
+                cursor: pointer;
+                transition: all 0.5s;
+
+                &:hover{
+                  color: $green-light;
+                }
               }
             }
             p {
@@ -503,6 +525,11 @@
           .detail {
             h1 {
               @include text($text-2xl, $font-SemiBold, $c1-700);
+              transition: all 0.5s;
+              cursor: pointer;
+              &:hover {
+                color: $green-light;
+              }
             }
             p {
               @include text($text-base, $font-normal, $c3);
@@ -562,6 +589,8 @@
           color: $c1;
           font-weight: $font-SemiBold;
           border-radius: 0.5rem;
+          cursor: pointer;
+
           &:hover{
             background-color: #0d8428;
           }

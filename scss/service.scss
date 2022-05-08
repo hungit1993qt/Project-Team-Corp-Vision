@@ -75,6 +75,11 @@ body {
               transition: 0.3s ease-in;
               border-radius: 0.5rem;
               border: 1px solid $c2;
+              cursor: pointer !important;
+
+              &:hover{
+                background-color: #137a45;
+              }
             }
             .img-service {
               width: 100%;
@@ -162,7 +167,9 @@ body {
               a {
                 text-decoration: none;
                 @include text($text-lg, $font-SemiBold, $c1-700);
+                transition: all 0.5s;
               }
+
               p {
                 @include text($text-base, $font-normal, $c3);
                 opacity: 0.5;
@@ -298,6 +305,11 @@ body {
               transition: 0.3s ease-in;
               border-radius: 0.5rem;
               border: 1px solid $c2;
+              cursor: pointer;
+
+              &:hover{
+                background-color: #0d8428;
+              }
               
           
       }
@@ -407,6 +419,11 @@ body {
               text-decoration: none;
               margin: 1.2rem 0;
               @include text($text-lg, $font-SemiBold, $c1-700);
+              transition: all 0.5s;
+              
+              &:hover{
+                color: $green-light;
+              }
             }
             p {
               @include text($text-base, $font-medium, $c3);

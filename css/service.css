@@ -111,6 +111,11 @@
   transition: 0.3s ease-in;
   border-radius: 0.5rem;
   border: 1px solid #009f4d;
+  cursor: pointer !important;
+}
+
+.introduced-service .main .container .row .col-item .detail .btn:hover {
+  background-color: #137a45;
 }
 
 .introduced-service .main .container .row .col-item .detail .img-service {
@@ -189,6 +194,8 @@
   font-size: 1.5rem;
   font-weight: 600;
   color: #213364;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .industries .main .container .row .col-item .detail .detail-info p {
@@ -336,6 +343,11 @@
   transition: 0.3s ease-in;
   border-radius: 0.5rem;
   border: 1px solid #009f4d;
+  cursor: pointer;
+}
+
+.feedback .container .row .col-right .form .btn:hover {
+  background-color: #0d8428;
 }
 
 @media screen and (max-width: 576px) {
@@ -422,6 +434,12 @@
   font-size: 1.5rem;
   font-weight: 600;
   color: #213364;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.services-result .main .container .row .col-item .detail a:hover {
+  color: #009f4d;
 }
 
 .services-result .main .container .row .col-item .detail p {

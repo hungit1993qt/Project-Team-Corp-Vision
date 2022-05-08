@@ -143,6 +143,11 @@
   cursor: pointer;
   padding: 0.9rem 3.2rem;
   border-radius: 0.5rem;
+  cursor: pointer !important;
+}
+
+.about-your-company .row .col-right .read-more:hover {
+  background-color: #0d8428;
 }
 
 .about-your-company .row .col-right .play-video {
@@ -156,7 +161,7 @@
   width: 4.3rem;
   height: 4.3rem;
   font-size: 1.3rem;
-  padding-left: 0.5rem;
+  padding-left: 0.2rem;
   text-align: center;
   line-height: 4rem;
   border-radius: 50%;
@@ -226,11 +231,22 @@
   margin-left: 1.5rem;
 }
 
-.about-feature .row .col .item .item-detail h1 {
+.about-feature .row .col .item .item-detail a {
+  text-decoration: none;
+  cursor: pointer !important;
+}
+
+.about-feature .row .col .item .item-detail a h1 {
   font-size: 1.5rem;
   font-weight: 500;
   color: #000000;
   opacity: 0.7;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.about-feature .row .col .item .item-detail a h1:hover {
+  color: #009f4d;
 }
 
 .about-feature .row .col .item .item-detail p {
@@ -349,7 +365,7 @@
   width: 4.3rem;
   height: 4.3rem;
   font-size: 1.3rem;
-  padding-left: 0.5rem;
+  padding-left: 0.2rem;
   text-align: center;
   line-height: 4rem;
   border-radius: 50%;
@@ -359,6 +375,7 @@
   border: 3px solid #ffffff;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 .about-solutions .container .info-solutions .detail a span:hover {
@@ -480,6 +497,13 @@
   font-weight: 600;
   color: #213364;
   padding-top: 1rem;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.our-professional .main .container .row .col-item .info a h1:hover {
+  color: #009f4d;
 }
 
 .our-professional .main .container .row .col-item .info p {
@@ -579,6 +603,13 @@
   font-size: 2rem;
   font-weight: 600;
   color: #213364;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.about-choose .main .container .row .col-item .detail h1:hover {
+  color: #009f4d;
 }
 
 .about-choose .main .container .row .col-item .detail p {
@@ -644,6 +675,7 @@
   color: #ffffff;
   font-weight: 600;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 .about-project .container .row .col-info .btn:hover {

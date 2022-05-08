@@ -775,8 +775,6 @@ html {
   background-color: #009f4d;
   border-radius: 10px;
   padding: 6px;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
 }
 
 .challenges .container .col-left a:hover {

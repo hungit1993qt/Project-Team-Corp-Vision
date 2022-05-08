@@ -276,6 +276,10 @@ html {
   cursor: pointer;
 }
 
+.carousel #slider .owl-item .item .detail a:hover {
+  background-color: #076b38;
+}
+
 .carousel #icon-navright {
   position: fixed;
   top: 36%;
@@ -574,8 +578,6 @@ html {
   color: #009f4d;
   font-size: 79px;
   cursor: pointer;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
 }
 
 .company .container .col-right .btn-bot .fa-solid:hover {

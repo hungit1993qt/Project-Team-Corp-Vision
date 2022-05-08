@@ -276,6 +276,10 @@ html {
   cursor: pointer;
 }
 
+.carousel #slider .owl-item .item .detail a:hover {
+  background-color: #076b38;
+}
+
 .carousel #icon-navright {
   position: fixed;
   top: 36%;
